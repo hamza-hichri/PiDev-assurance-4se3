@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.gui.TestController">
+   <children>
+      <AnchorPane onMouseClicked="#login" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="imglogo" fitHeight="300.0" fitWidth="405.0" layoutX="50.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assurance.gif" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="486.0" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="txtUsername" focusColor="#262626" labelFloat="true" layoutX="60.0" layoutY="224.0" prefHeight="25.0" prefWidth="369.0" promptText="Username" />
+            <JFXPasswordField fx:id="txtPassword" focusColor="#262626" labelFloat="true" layoutX="60.0" layoutY="307.0" prefHeight="25.0" prefWidth="369.0" promptText="Password" />
+            <Label layoutX="129.0" layoutY="101.0" text="Access your account ">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="162.0" layoutY="43.0" text="Welcome">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="348.0" prefHeight="17.0" prefWidth="128.0" text="Forgot Your Password ?" />
+            <Label layoutX="238.0" layoutY="456.0" prefHeight="7.0" prefWidth="24.0" text="Or" />
+            <JFXButton buttonType="RAISED" layoutX="146.0" layoutY="485.0" prefHeight="46.0" prefWidth="184.0" style="-fx-background-color: #2688FF; -fx-background-radius: 20;" text="Continue with Facebook" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="FACEBOOK" size="20" />
+               </graphic>
+            </JFXButton>
+            <FontAwesomeIconView glyphName="LOCK" layoutX="45.0" layoutY="322.0" size="20" text="" translateY="5.0" />
+            <MaterialDesignIconView glyphName="ACCOUNT_CIRCLE" layoutX="41.0" layoutY="236.0" size="20" translateY="8.0" />
+            <JFXButton buttonType="RAISED" layoutX="146.0" layoutY="387.0" onMouseClicked="#login" prefHeight="46.0" prefWidth="184.0" style="-fx-background-color: #262626; -fx-background-radius: 20;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
