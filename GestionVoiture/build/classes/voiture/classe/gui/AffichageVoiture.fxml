@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="voiture.classe.gui.AffichageVoitureController">
+   <children>
+      <TableView fx:id="tableV" layoutX="91.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="idV" prefWidth="75.0" text="id voiture" />
+          <TableColumn fx:id="CinUtilisateur" prefWidth="150.39996337890625" text="Cin Utilisateur" />
+            <TableColumn fx:id="marqueV" minWidth="0.0" prefWidth="75.99998474121094" text="marque" />
+            <TableColumn fx:id="modeleV" prefWidth="73.60003662109375" text="modele" />
+            <TableColumn fx:id="chasisV" prefWidth="61.60003662109375" text="chasis" />
+            <TableColumn fx:id="griseV" prefWidth="88.0" text="carte grise" />
+            <TableColumn fx:id="nbplaceV" prefWidth="74.40008544921875" text="nb de place" />
+            <TableColumn fx:id="valeurV" prefWidth="47.199951171875" text="valeur" />
+            <TableColumn fx:id="puissV" prefWidth="103.199951171875" text="puissance" />
+            <TableColumn fx:id="ageV" prefWidth="139.2000732421875" text="age de la voiture" />
+        </columns>
+      </TableView>
+      <HBox layoutX="217.0" layoutY="488.0" prefHeight="100.0" prefWidth="471.0" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <Button fx:id="updateV" mnemonicParsing="false" onAction="#updateV" prefHeight="40.0" prefWidth="100.0" text="Modifier">
+               <HBox.margin>
+                  <Insets right="30.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="createnewvoiture" mnemonicParsing="false" onAction="#createVoiturebtn" prefHeight="40.0" prefWidth="100.0" text="Ajout">
+               <HBox.margin>
+                  <Insets right="30.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="deleteV" mnemonicParsing="false" onAction="#deleteV" prefHeight="40.0" prefWidth="100.0" text="Supprimer">
+               <HBox.margin>
+                  <Insets right="30.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="rerurntomain" mnemonicParsing="false" onAction="#retourmainpage" prefHeight="40.0" prefWidth="100.0" text="retour">
+               <HBox.margin>
+                  <Insets right="30.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
