@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.gui.AffichageController">
+    <stylesheets>
+        <URL value="@affichage.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="table" layoutX="202.0" layoutY="14.0" prefHeight="342.0" prefWidth="584.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="15.0">
+        <columns>
+          <TableColumn fx:id="Id_accident" prefWidth="90.0" text="Id accident" />
+          <TableColumn fx:id="date" prefWidth="90.0" text="date accident" />
+            <TableColumn fx:id="Id_assireure1" prefWidth="90.0" text="Id assireure1" />
+            <TableColumn fx:id="Id_assureure2" minWidth="20.0" prefWidth="90.0" text="Id assureure2" />
+            <TableColumn fx:id="Description_Texte" prefWidth="200.0" text="Description Texte" />
+            <TableColumn fx:id="Emplacement" prefWidth="110.0" text="Emplacement" />
+        </columns>
+      </TableView>
+      <Label layoutX="1.0" layoutY="444.0" />
+      <Label layoutX="771.0" layoutY="435.0" />
+      <VBox layoutX="589.0" layoutY="73.0" prefHeight="226.0" prefWidth="100.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <Button fx:id="ajouteracc" mnemonicParsing="false" onAction="#accidentcrud" prefHeight="40.0" prefWidth="100.0" text="Ajouter">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="modif" mnemonicParsing="false" onAction="#accidentcrud" prefHeight="40.0" prefWidth="100.0" text="modiffier" textFill="#1e1b1b">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btn_Suuprumer" mnemonicParsing="false" onAction="#accidentcrud" prefHeight="40.0" prefWidth="100.0" text="Supprumer" textFill="#1b1a1a">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="retour_aff" mnemonicParsing="false" onAction="#accidentcrud" prefHeight="40.0" prefWidth="100.0" text="retour" textFill="#2b2a2a">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
