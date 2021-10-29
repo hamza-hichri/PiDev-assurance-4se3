@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.gui.ModifierclientController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@ajoutclient.css" />
+         </stylesheets>
+         <children>
+            <Label layoutX="95.0" layoutY="63.0" text="prenom" />
+            <Label layoutX="95.0" layoutY="103.0" text="cin" />
+            <Label layoutX="95.0" layoutY="143.0" text="numero" />
+            <Label layoutX="106.0" layoutY="192.0" text="role" />
+            <Label layoutX="91.0" layoutY="233.0" text="adresse" />
+            <Label layoutX="89.0" layoutY="23.0" prefHeight="17.0" prefWidth="54.0" text="nom" />
+            <Label layoutX="84.0" layoutY="271.0" text="date naissance" />
+            <Label layoutX="89.0" layoutY="309.0" text="num patente" />
+            <Label layoutX="88.0" layoutY="353.0" text="registre commerce" />
+            <TextField fx:id="nomaj" layoutX="213.0" layoutY="19.0" />
+            <TextField fx:id="prenomaj" layoutX="213.0" layoutY="59.0" />
+            <TextField fx:id="cinaj" layoutX="213.0" layoutY="99.0" />
+            <TextField fx:id="numaj" layoutX="213.0" layoutY="148.0" />
+            <TextField fx:id="adresseaj" layoutX="213.0" layoutY="229.0" />
+            <TextField fx:id="dateaj" layoutX="213.0" layoutY="267.0" />
+            <TextField fx:id="registreaj" layoutX="213.0" layoutY="341.0" />
+            <TextField fx:id="patenteaj" layoutX="213.0" layoutY="305.0" />
+            <Button fx:id="modifclient" layoutX="466.0" layoutY="329.0" mnemonicParsing="false" onAction="#updateclient" prefHeight="25.0" prefWidth="89.0" text="modifier" />
+         </children>
+      </AnchorPane>
+      <ComboBox fx:id="roleaj" layoutX="223.0" layoutY="198.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
