@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="779.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="voiture.classe.gui.AjoutController">
+   <children>
+      <VBox layoutX="43.0" layoutY="78.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label text="cin d'utilisateur">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="marque voiture">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="modele voiture">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="chasis">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="carte grise">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="390.0" layoutY="78.0" prefHeight="200.0" prefWidth="151.0">
+         <children>
+            <Label text="nombre de place">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="valeur">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="puissance">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="age de la voiture">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="161.0" layoutY="78.0" prefHeight="200.0" prefWidth="167.0">
+         <children>
+            <TextField fx:id="cinuv">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="marv">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="modv">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="chav">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="cgv">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox layoutX="541.0" layoutY="78.0" prefHeight="200.0" prefWidth="151.0">
+         <children>
+            <TextField fx:id="nbp">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="valv">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="puisv">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="agev">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <Button fx:id="btnajout" layoutX="300.0" layoutY="331.0" mnemonicParsing="false" onAction="#ajoutvoiture" text="Ajouter" />
+      <Button fx:id="btnannuler" layoutX="437.0" layoutY="331.0" mnemonicParsing="false" onAction="#retourv" text="Annuler" />
+      <Label fx:id="controlesaisie" layoutX="72.0" layoutY="303.0" />
+   </children>
+</AnchorPane>
